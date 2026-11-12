@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#142e31" />
+  <meta name="description" content="Layover — turn hostel hellos into friendships that travel with you." />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" type="image/svg+xml" href="./assets/icon.svg" />
+  <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>LAYOVER. — Your people, everywhere.</title>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand-lockup"><div class="brand-symbol">✳</div><span>LAYOVER<span class="brand-period">.</span></span></div>
+      <div class="sidebar-tagline">The people make the journey.</div>
+      <div class="side-label">YOUR WORLD</div>
+      <div id="desktop-nav"></div>
+      <div class="side-foot">
+        <div class="demo-tag"><span class="status-dot"></span> INTERACTIVE DEMO</div>
+        <div class="side-foot-title">Built for the people you meet along the way.</div>
+        <button class="side-foot-link" data-action="open-about">How this demo works <span>↗</span></button>
+      </div>
+    </aside>
+    <div class="main-column">
+      <header class="topbar">
+        <button class="logo-mobile" data-action="nav" data-route="home" aria-label="Go to home">✳ <b>LAYOVER.</b></button>
+        <div class="topbar-eyebrow" id="topbar-location">YOUR TRAVEL NETWORK <span>✦</span></div>
+        <button class="mini-profile" data-action="nav" data-route="profile" aria-label="Profile"><span id="my-mini-avatar">D</span></button>
+      </header>
+      <main id="app" aria-live="polite"></main>
+      <nav class="bottom-nav" id="mobile-nav" aria-label="Main navigation"></nav>
+    </div>
+  </div>
+  <div class="modal-backdrop" id="modal" hidden></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./app.js" defer></script>
+</body>
+</html>
